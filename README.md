@@ -1,1 +1,1 @@
-# if-timer
+# if-fast
