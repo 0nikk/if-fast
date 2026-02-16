@@ -1,9 +1,12 @@
 import { Stack } from 'expo-router';
+import { FastingProvider } from '../context/FastingContext';
 
 export default function RootLayout() {
   return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-    </Stack>
+    <FastingProvider>
+      <Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      </Stack>
+    </FastingProvider>
   );
 }
